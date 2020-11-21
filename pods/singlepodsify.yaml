@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+       name: sifymailadmin
+       namespace: mailadmin
+       labels:
+           myapp: httpsifysasi
+spec:
+   containers:
+           - name: httpsifymailadmin
+             image: httpd
+             ports:
+               - containerPort: 80
